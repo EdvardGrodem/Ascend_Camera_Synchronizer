@@ -17,7 +17,7 @@
 	TCA0.SINGLE.CTRLB |= TCA_SINGLE_WGMODE_SS_gc; //Set Single-slope PWM Mode
 
 	PORTB_DIRSET = 1; //Set PB0 to output
-	TCA0.SINGLE.CTRLB |= TCA_SINGLE_CMP0EN_bm; //Enable output on CMP1/WO0/PB0
+	TCA0.SINGLE.CTRLB |= TCA_SINGLE_CMP0EN_bm; //Enable output on CMP0/WO0/PB0
 	TCA0.SINGLE.PER = 20000000/(PRE_SCALAR*freq_hz)-1;//Set TOP
 	TCA0.SINGLE.CMP0 = TCA0.SINGLE.PER/2; //Generate a pulse with 50% duty cycle
 

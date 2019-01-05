@@ -10,7 +10,7 @@
 
 #include <avr/io.h>
 
-
+//Initialize the the pulse on PB0 with a maximum of 76 Hz
 void Pulse_Generator_init(int freq_hz);
 
 #endif /* PULSE_GENERATOR_H_ */
